@@ -1,6 +1,8 @@
-package com.segurosx.models;
+package com.segurosx.models.impl;
 
-public class SeguroVehicular extends Seguro {
+import com.segurosx.models.abstracts.AbstractSeguro;
+
+public class SeguroVehicular extends AbstractSeguro {
 
     
     public SeguroVehicular(String marca, String modelo)    {

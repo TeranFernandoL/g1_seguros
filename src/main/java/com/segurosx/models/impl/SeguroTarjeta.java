@@ -1,6 +1,8 @@
-package com.segurosx.models;
+package com.segurosx.models.impl;
 
-public class SeguroTarjeta extends Seguro {
+import com.segurosx.models.abstracts.AbstractSeguro;
+
+public class SeguroTarjeta extends AbstractSeguro{
   
 
     public SeguroTarjeta(String bancoTarjeta)    {
