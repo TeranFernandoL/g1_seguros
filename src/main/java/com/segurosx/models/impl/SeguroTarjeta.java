@@ -1,8 +1,9 @@
 package com.segurosx.models.impl;
 
-import com.segurosx.models.abstracts.AbstractSeguro;
+import com.segurosx.models.Seguro;
+import com.segurosx.models.interfaces.*;
 
-public class SeguroTarjeta extends AbstractSeguro{
+public class SeguroTarjeta extends Seguro implements IDetalleSeguro,IRiesgoSeguro{
   
 
     public SeguroTarjeta(String bancoTarjeta)    {
@@ -26,5 +27,10 @@ public class SeguroTarjeta extends AbstractSeguro{
     public String getDetalleSeguro() {
         
         return "Seg. Tarjeta Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
+    }
+
+    @Override
+    public String getNivelRiesgo() {
+         return this.nivelRiesgo;
     }
 }

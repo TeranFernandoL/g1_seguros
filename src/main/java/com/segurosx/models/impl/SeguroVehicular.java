@@ -1,8 +1,8 @@
 package com.segurosx.models.impl;
+import com.segurosx.models.Seguro;
+import com.segurosx.models.interfaces.*;
 
-import com.segurosx.models.abstracts.AbstractSeguro;
-
-public class SeguroVehicular extends AbstractSeguro {
+public class SeguroVehicular extends Seguro implements IDetalleSeguro,IRiesgoSeguro {
 
     
     public SeguroVehicular(String marca, String modelo)    {
@@ -28,4 +28,9 @@ public class SeguroVehicular extends AbstractSeguro {
 
         return "Seg. Vehicular Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo;
     }    
+
+    @Override
+    public String getNivelRiesgo() {
+         return this.nivelRiesgo;
+    }
 }
