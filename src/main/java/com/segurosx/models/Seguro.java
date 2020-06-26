@@ -3,7 +3,7 @@ package com.segurosx.models;
 import java.util.Random;
 import com.segurosx.models.interfaces.*;
 
-public class Seguro{
+public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro{
 
     protected Integer numero;
     protected Certificado certificado;
