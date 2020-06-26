@@ -12,6 +12,8 @@ public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro{
     protected String bancoTarjeta;
     protected String marca;
     protected String modelo;
+    protected String tipo = "ninguno";
+    
     public Seguro() {
         this.numero = new Integer(new Random().nextInt());
     }

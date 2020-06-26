@@ -1,7 +1,6 @@
 package com.segurosx.models.impl;
 
 import com.segurosx.models.Seguro;
-import com.segurosx.models.interfaces.*;
 
 public class SeguroTarjeta extends Seguro {
   
