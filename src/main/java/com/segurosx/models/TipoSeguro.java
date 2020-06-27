@@ -1,6 +1,5 @@
 package com.segurosx.models;
 
-
 public abstract class TipoSeguro{
     public TipoSeguro() {
     }

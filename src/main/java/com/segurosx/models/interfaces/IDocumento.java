@@ -9,8 +9,7 @@ package com.segurosx.models.interfaces;
  *
  * @author shinobu
  */
-public interface IRiesgoSeguro {
-    public String getNivelRiesgo();
-    public void calcularRiesgo();
-    
+public interface IDocumento {
+    public Integer getNumero();
+    public void setNumero(Integer numero);
 }

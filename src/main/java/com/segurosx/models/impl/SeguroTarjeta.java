@@ -12,7 +12,7 @@ public class SeguroTarjeta extends Seguro {
     }
 
     @Override
-    public void cacularRiesgo()   {
+    public void calcularRiesgo()   {
 
         if (this.bancoTarjeta.equals("AZTECA")) {
             this.nivelRiesgo = "ALTO";

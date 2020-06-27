@@ -6,8 +6,7 @@ import com.segurosx.models.interfaces.*;
 public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro,ICobertura{
 
     protected Integer numero;
-    protected Certificado certificado;
-    protected Poliza poliza;
+    protected IDocumento documento;
     protected String nivelRiesgo = "NINGUNO";
     protected String bancoTarjeta;
     protected String marca;
@@ -26,21 +25,12 @@ public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro,ICobertura{
     public TipoSeguro getTipoSeguro() {
         return tipoSeguro;
     }
-    
-    public Certificado getCertificado() {
-        return certificado;
-    }
 
-    public void setCertificado(Certificado certificado) {
-        this.certificado = certificado;
+    public IDocumento getDocumento() {
+        return documento;
     }
-
-    public Poliza getPoliza() {
-        return poliza;
-    }
-
-    public void setPoliza(Poliza poliza) {
-        this.poliza = poliza;
+    public void setDocumento(IDocumento documento){
+        this.documento = documento;
     }
 
     public Integer getNumero() {
