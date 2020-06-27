@@ -4,7 +4,7 @@ import java.util.Random;
 import com.segurosx.models.interfaces.*;
 
 public abstract class Seguro implements IDetalleSeguro, IRiesgoSeguro{
-
+    protected String id;
     protected Integer numero;
     protected Certificado certificado;
     protected Poliza poliza;
@@ -16,6 +16,14 @@ public abstract class Seguro implements IDetalleSeguro, IRiesgoSeguro{
     
     public Seguro() {
         this.numero = new Integer(new Random().nextInt());
+    }
+    
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
     
     public Certificado getCertificado() {

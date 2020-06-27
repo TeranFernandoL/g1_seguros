@@ -1,5 +1,7 @@
 package com.segurosx.models;
 
+import com.segurosx.models.interfaces.IFormaPagoCupon;
+
 public class CuponPago implements IFormaPagoCupon   {
 
     @Override

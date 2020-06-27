@@ -1,4 +1,4 @@
-package com.segurosx.models;
+package com.segurosx.models.interfaces;
 
 public interface IFormaPagoDebitoAutomatico {
 
