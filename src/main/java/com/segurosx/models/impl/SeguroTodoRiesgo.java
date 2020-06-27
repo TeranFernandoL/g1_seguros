@@ -8,7 +8,6 @@ public class SeguroTodoRiesgo extends TipoSeguroVehicular implements ITodoRiesgo
     @Override
     public String accion() {
         return "Cobertura todo riesgo";
-
     }
 
     @Override
@@ -21,7 +20,6 @@ public class SeguroTodoRiesgo extends TipoSeguroVehicular implements ITodoRiesgo
     public String getCoberturaChoque() {
         String  c = "Cobertura choque";
         return c;
-
     }
     
 }

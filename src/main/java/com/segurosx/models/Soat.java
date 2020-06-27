@@ -11,5 +11,4 @@ public class Soat extends TipoSeguroVehicular{
         return c;
     }
     
-    
 }
