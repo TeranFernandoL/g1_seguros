@@ -21,14 +21,14 @@ public class App
         seguro.cacularRiesgo();
         cliente.setCompraSeguro(seguro);*/
 
-        SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris");
-        seguro.cacularRiesgo();
-        seguro.cobertura(new Soat());
+        SeguroVehicular seguro = new SeguroVehicular("Toyota","Yaris",new Soat());
+        seguro.cacularRiesgo();//seguro.cobertura();
+        //seguro.setTipoSeguro();
         cliente.setCompraSeguro(seguro);
 
-        SeguroVehicular seguro1 = new SeguroVehicular("Toyota","Yaris");
+        SeguroVehicular seguro1 = new SeguroVehicular("Toyota","Yaris",new SeguroChoque());
         seguro1.cacularRiesgo();
-        seguro1.cobertura(new SeguroChoque());
+        //seguro1.setTipoSeguro(new SeguroChoque());
         cliente.setCompraSeguro(seguro1);
 
         SeguroTarjeta seguro2 = new SeguroTarjeta("BCP");

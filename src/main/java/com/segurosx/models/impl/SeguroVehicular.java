@@ -5,12 +5,13 @@ import com.segurosx.models.TipoSeguro;
 
 public class SeguroVehicular extends Seguro  {
 
-    
-    public SeguroVehicular(String marca, String modelo)    {
+    public SeguroVehicular(String marca, String modelo, TipoSeguro tipoSeguro)    {
 
         super();
         this.marca = marca;
         this.modelo = modelo;
+        this.tipoSeguro = tipoSeguro;
+        cobertura();
     }
 
     @Override
@@ -34,8 +35,9 @@ public class SeguroVehicular extends Seguro  {
     public String getNivelRiesgo() {
          return this.nivelRiesgo;
     }
-    //método propio
-    public void cobertura(TipoSeguro e){
-        this.tipo= e.accion();
+    
+    @Override
+    public void cobertura(){
+        this.tipo= tipoSeguro.accion();
     }
 }

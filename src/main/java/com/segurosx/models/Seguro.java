@@ -3,7 +3,7 @@ package com.segurosx.models;
 import java.util.Random;
 import com.segurosx.models.interfaces.*;
 
-public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro{
+public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro,ICobertura{
 
     protected Integer numero;
     protected Certificado certificado;
@@ -13,11 +13,19 @@ public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro{
     protected String marca;
     protected String modelo;
     protected String tipo = "ninguno";
+    protected TipoSeguro tipoSeguro;
     
     public Seguro() {
         this.numero = new Integer(new Random().nextInt());
     }
     
+    public void setTipoSeguro(TipoSeguro tipoSeguro) {
+        this.tipoSeguro = tipoSeguro;
+    }
+
+    public TipoSeguro getTipoSeguro() {
+        return tipoSeguro;
+    }
     
     public Certificado getCertificado() {
         return certificado;
