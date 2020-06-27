@@ -18,7 +18,7 @@ public class SeguroVehicular extends Seguro {
     }
 
     @Override
-    public void calcularRiesgo()   {
+    public void calcularRiesgo(){
 
         if (this.marca.equals("Toyota") && this.modelo.equals("Yaris")) {
             this.nivelRiesgo = "ALTO";
@@ -29,8 +29,7 @@ public class SeguroVehicular extends Seguro {
     }
 
     @Override
-    public String getDetalleSeguro()    {
-
+    public String getDetalleSeguro(){
         return "Seg. Vehicular Numero: " + this.numero + " con riesgo: " + this.nivelRiesgo + " tipo: "+ this.tipo+ " "+this.documento;
     }    
 
@@ -44,7 +43,4 @@ public class SeguroVehicular extends Seguro {
         this.tipo = tipoSeguro.accion();
     }
 
-    public Double distribucionMensualidadPrima(){
-        return prima/12;
-    }
 }

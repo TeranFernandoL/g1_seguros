@@ -17,4 +17,9 @@ public class CalculoPrimaPeru implements ICalculoPrima {
     public Double getPrima(){
         return 1.0;
     }
+
+    @Override
+    public Double distribucionMensualidadPrima(){
+        return getPrima()/12;
+    }
 }
