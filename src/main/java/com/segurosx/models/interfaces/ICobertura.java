@@ -1,7 +1,5 @@
 package com.segurosx.models.interfaces;
 
-public interface ICobertura{
-
-    public void getTipoCobertura();
-    
+public interface ICobertura {
+    void cobertura();
 }

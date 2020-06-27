@@ -1,9 +1,16 @@
 package com.segurosx.models;
 
-public class Certificado {
+import java.util.Random;
+
+import com.segurosx.models.interfaces.IDocumento;
+
+public class Certificado implements IDocumento {
     
     private Integer numero;
 
+    public Certificado(){
+        this.numero = new Integer(new Random().nextInt());
+    }
     public Integer getNumero() {
         return numero;
     }
@@ -12,4 +19,8 @@ public class Certificado {
         this.numero = numero;
     }
 
+    @Override
+    public String toString() {
+        return "Numero de certificado: "+this.numero;
+    }
 }

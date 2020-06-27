@@ -32,4 +32,9 @@ public class SeguroTarjeta extends Seguro {
     public String getNivelRiesgo() {
          return this.nivelRiesgo;
     }
+
+    @Override
+    public void cobertura(){
+        
+    }
 }

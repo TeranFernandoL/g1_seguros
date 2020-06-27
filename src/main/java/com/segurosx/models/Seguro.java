@@ -3,21 +3,23 @@ package com.segurosx.models;
 import java.util.Random;
 import com.segurosx.models.interfaces.*;
 
-public abstract class Seguro implements IDetalleSeguro, IRiesgoSeguro{
+
+public abstract class Seguro implements IDetalleSeguro,IRiesgoSeguro,ICobertura{
     protected String id;
     protected Integer numero;
-    protected Certificado certificado;
-    protected Poliza poliza;
+    protected IDocumento documento;
     protected String nivelRiesgo = "NINGUNO";
     protected String bancoTarjeta;
     protected String marca;
     protected String modelo;
     protected String tipo = "ninguno";
+    protected TipoSeguro tipoSeguro;
     
     public Seguro() {
         this.numero = new Integer(new Random().nextInt());
     }
     
+
     public String getId() {
         return id;
     }
@@ -25,21 +27,21 @@ public abstract class Seguro implements IDetalleSeguro, IRiesgoSeguro{
     public void setId(String id) {
         this.id = id;
     }
-    
-    public Certificado getCertificado() {
-        return certificado;
+        
+    public void setTipoSeguro(TipoSeguro tipoSeguro) {
+        this.tipoSeguro = tipoSeguro;
+
     }
 
-    public void setCertificado(Certificado certificado) {
-        this.certificado = certificado;
+    public TipoSeguro getTipoSeguro() {
+        return tipoSeguro;
     }
 
-    public Poliza getPoliza() {
-        return poliza;
+    public IDocumento getDocumento() {
+        return documento;
     }
-
-    public void setPoliza(Poliza poliza) {
-        this.poliza = poliza;
+    public void setDocumento(IDocumento documento){
+        this.documento = documento;
     }
 
     public Integer getNumero() {

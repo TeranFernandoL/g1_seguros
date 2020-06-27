@@ -1,8 +1,6 @@
 package com.segurosx.models;
-import com.segurosx.models.Seguro;
 import java.util.ArrayList;
 import java.util.List;
-import com.segurosx.models.interfaces.IDetalleSeguro;
 
 public class Cliente {
     
