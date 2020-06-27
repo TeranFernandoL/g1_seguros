@@ -1,6 +1,6 @@
 package com.segurosx.models;
 
-public class Soat extends TipoSeguro{
+public class Soat extends TipoSeguroVehicular{
 
     public Soat() {
     }

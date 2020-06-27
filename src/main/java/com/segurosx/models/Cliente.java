@@ -7,6 +7,7 @@ public class Cliente {
     private String nombre;
     private List<Seguro> seguros;
     private String id;
+
     public Cliente(String nombre)   {
 
         this.nombre = nombre;

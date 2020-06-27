@@ -1,9 +1,9 @@
 package com.segurosx.models.impl;
 
+import com.segurosx.models.TipoSeguroVehicular;
 import com.segurosx.models.interfaces.ITodoRiesgo;
-import com.segurosx.models.TipoSeguro;
 
-public class SeguroTodoriesgo extends TipoSeguro implements ITodoRiesgo{
+public class SeguroTodoRiesgo extends TipoSeguroVehicular implements ITodoRiesgo{
 
     @Override
     public String accion() {

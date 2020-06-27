@@ -3,7 +3,8 @@ package com.segurosx.models.impl;
 import com.segurosx.models.Seguro;
 
 public class SeguroTarjeta extends Seguro {
-  
+
+    private String bancoTarjeta;
 
     public SeguroTarjeta(String bancoTarjeta)    {
 

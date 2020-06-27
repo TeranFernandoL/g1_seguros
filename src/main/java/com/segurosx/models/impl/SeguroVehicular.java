@@ -1,12 +1,15 @@
 package com.segurosx.models.impl;
 
 import com.segurosx.models.Seguro;
-import com.segurosx.models.TipoSeguro;
+import com.segurosx.models.TipoSeguroVehicular;
 
 public class SeguroVehicular extends Seguro{
 
-    public SeguroVehicular(String marca, String modelo, TipoSeguro tipoSeguro)    {
+    private String marca;
+    private String modelo;
+    private TipoSeguroVehicular tipoSeguro;
 
+    public SeguroVehicular(String marca, String modelo, TipoSeguroVehicular tipoSeguro)    {
         super();
         this.marca = marca;
         this.modelo = modelo;
@@ -38,6 +41,9 @@ public class SeguroVehicular extends Seguro{
     
     @Override
     public void cobertura(){
-        this.tipo= tipoSeguro.accion();
+        this.tipo = tipoSeguro.accion();
+    }
+
+    public void distribucionMensualidadPrima(){
     }
 }
