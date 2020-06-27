@@ -3,7 +3,7 @@ package com.segurosx.models.impl;
 import com.segurosx.models.Seguro;
 import com.segurosx.models.TipoSeguroVehicular;
 
-public class SeguroVehicular extends Seguro{
+public class SeguroVehicular extends Seguro {
 
     private String marca;
     private String modelo;
@@ -44,6 +44,7 @@ public class SeguroVehicular extends Seguro{
         this.tipo = tipoSeguro.accion();
     }
 
-    public void distribucionMensualidadPrima(){
+    public Double distribucionMensualidadPrima(){
+        return prima/12;
     }
 }

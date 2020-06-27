@@ -1,6 +1,5 @@
 package com.segurosx;
 
-import com.segurosx.models.impl.CalculoPrimaPeru;
 import io.javalin.Javalin;
 import io.javalin.plugin.openapi.OpenApiOptions;
 import io.javalin.plugin.openapi.OpenApiPlugin;

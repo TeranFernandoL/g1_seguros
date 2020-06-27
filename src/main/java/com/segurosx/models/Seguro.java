@@ -11,7 +11,7 @@ public abstract class Seguro implements IDetalleSeguro, IRiesgoSeguro, ICobertur
     protected Integer numero;
     protected IDocumento documento;
     protected String nivelRiesgo = "NINGUNO";
-    protected String tipo = "ninguno";
+    protected String tipo = "NINGUNO";
     protected Double prima;
 
     public Seguro() {
